@@ -1,12 +1,15 @@
 import styles from './styles.module.css'
 import { Link } from "react-router-dom"
 import { BiSearchAlt2 } from "react-icons/bi"
+import Logo from "../../assets/objects/Logo"
 
 function Navbar() {
     return (
         <nav id="navbar">
             <h2>
-                <Link to="/">MoviesLib</Link>
+                <Link to="/">
+                    <Logo /> MoviesLib
+                </Link>
             </h2>
             <form>
                 <input type="text" placeholder="Busque um filme" />
