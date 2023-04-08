@@ -5,6 +5,9 @@ import App from "./App"
 import Home from './pages/Home'
 import Movie from './pages/Movie'
 import Search from './pages/Search'
+import './index.css'
+import './styles/setting/colors.css';
+import './styles/generic/reset.css';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
