@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 
 function Logo() {
   return(
-    <img src={AppLogo} className="logo" alt="" />
+    <img src={AppLogo} className={styles.logo} alt="" />
   )
 }
 
