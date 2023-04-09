@@ -5,7 +5,7 @@ import Logo from "../../assets/objects/Logo"
 
 function Navbar() {
     return (
-        <nav id="navbar">
+        <nav id={styles.navbar}>
             <h2>
                 <Link to="/">
                     <Logo /> MoviesLib
