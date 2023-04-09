@@ -21,9 +21,9 @@ function Home() {
   }, []);
 
   return (
-    <div className='container'>
-      <h2 className='title'>Melhores filmes:</h2>
-      <div className='movies-container'>
+    <div className={styles.container}>
+      <h2 className={styles.title}>Melhores filmes:</h2>
+      <div className={styles.movies_container}>
         {topMovies.length === 0 && <p>Carregando...</p>}
         {topMovies.length > 0 && 
         topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
