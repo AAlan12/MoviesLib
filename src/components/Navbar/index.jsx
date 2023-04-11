@@ -9,12 +9,13 @@ function Navbar() {
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
 
-        if (!search) return
-        navigate(`/search?q${search}`)
-        setSearch("")
-    }
+        if (!search) return;
+
+        navigate(`/search?q=${search}`, { replace: true });
+        setSearch("");
+    };
 
     return (
         <nav id={styles.navbar}>
@@ -24,10 +25,12 @@ function Navbar() {
                 </Link>
             </h2>
             <form onSubmit={handleSubmit}>
-                <input type="text"
+                <input
+                    type="text"
                     placeholder="Busque um filme"
                     onChange={(e) => setSearch(e.target.value)}
-                    value={search} />
+                    value={search}
+                />
                 <button type="submit">
                     <BiSearchAlt2 />
                 </button>
